@@ -1,0 +1,25 @@
+from turtle import Turtle, Screen
+import random
+
+pencolor = ['red', 'purple', 'blue', 'black', 'orange', 'green']
+turtle = Turtle()
+turtle.shape('turtle')
+turtle.pensize(5)
+
+def figura(lados):
+    for i in range(lados):
+        turtle.pencolor(random.choice(pencolor))
+        turtle.fd(-100)
+        turtle.left(360 / lados)
+
+figura(3)
+figura(4)
+figura(5)
+figura(6)
+figura(7)
+figura(8)
+figura(9)
+figura(10)
+
+screen = Screen()
+screen.mainloop()
